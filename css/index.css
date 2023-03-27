@@ -141,7 +141,7 @@ a{
 
 .boxs{
   /* border: 1px solid #000; */
-  border-radius: 10%;
+  border-radius: 50px;
   width: 1200px;
   height: 500px;
   margin: auto;
@@ -252,7 +252,7 @@ a{
 .boxs p{
   position: relative;
   top: 50%;
-  font-size: 50px;
+  font-size: 30px;
   color: #000;
   text-shadow: 0 0 10px #fff;
   transition: 0.7s;
@@ -568,9 +568,9 @@ input[name=tabmenu]{display: none;}
   bottom: 10px;
 }
 .btn label{
-  background-color: #fff;
-  width: 20px;
-  height: 20px;
+  background-color: #ffffff93;
+  width: 25px;
+  height: 5px;
   display: inline-block;
   cursor: pointer;
   transition: 0.3s;
@@ -589,7 +589,7 @@ input[id=tab3]:checked ~ .btn label[for=tab3],
 input[id=tab4]:checked ~ .btn label[for=tab4],
 input[id=tab5]:checked ~ .btn label[for=tab5]{
   background-color:red;
-  border-radius: 50%;
+  border-radius: 50px;
 }
 .name1, .name2, .name3, .name4, .name5{
   position: absolute;
