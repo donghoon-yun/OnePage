@@ -16,7 +16,6 @@ html{
 h1{ font-family: 'PT Serif', serif;}
 body{
   font-family: 'OTWelcomeRA'; 
-  background-color: #e4fff7;
 }
 .top{ 
   position:fixed;
@@ -33,12 +32,13 @@ body{
 
 .top a:hover{
   background: url(../image/free-up-arrow-icon-3098-thumb.png) no-repeat center / cover;
-  transform: rotatey(360deg);
+  transform: rotateY(360deg);
 }
 
 /* header--------------- */
 
 header{
+  color: tomato;
   width: 100%;
   background-color: #000;
   height: 150px;
@@ -74,29 +74,27 @@ a{
   text-transform: capitalize;
 }
 .gnb li a:hover {
-
-  transform: scale(2);
   color: tomato;
   border-radius: 10px;
 }
 
-/* main_visyal---------- */
+/* main_visual---------- */
 .main_visual{
   width: 100%;
-  height: 500px;
+  height: 600px;
   /* border: 1px solid #000; */
   cursor: pointer;
 }
 .main_text1{
-  background: url(../image/main/main-1.png) no-repeat center / cover fixed;
   width: inherit;
   height: inherit;
-  text-align: center;
+  /* text-align: center; */
   opacity: 1;
   transition: 0.5s;/* 파이어폭스에서 실행안됨 */
+  background: url(../image/main/KakaoTalk_20230726_142256317.png) no-repeat center / cover fixed;
 }
 .main_text1:hover{
-  background: url(../image/main/main-2.png) no-repeat center / cover fixed;
+  background: url(../image/main/main_shower@3x.png) no-repeat center / cover fixed;
 }
 .text1 {
   width: inherit;
@@ -132,15 +130,16 @@ a{
 
 
 /* about---------------- */
+.container1{
+  width: 100%;
+  height: 500px;
+}
 #about{
-  margin-top: 100px;
-  margin-bottom: 20px;
+  margin: 150px 0 50px 0;
   text-align: center;
   font-size: 70px;
 }
-
 .boxs{
-  /* border: 1px solid #000; */
   border-radius: 50px;
   width: 1200px;
   height: 500px;
@@ -152,7 +151,6 @@ a{
   position: relative;
   overflow:hidden;
   cursor: pointer;
-  box-shadow: 0 0 5px rgba(255, 0, 255, 0.473);
 }
 .box-text{
   display: flex;
@@ -161,81 +159,77 @@ a{
   transition: 0.3s;
   transition-delay: 0.7s;
   margin-top: 100px;
-  text-shadow: 0 0 5px #000;
+  font-size: 20px;
+  padding: 0px 30px;
+  line-height: 30px;
 }
-.box-text:hover a{color: red;}
+.box-text:hover a{color: #fff;}
 .boxs a{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  border-radius: 30%;
   position:absolute;
   top:70%;  
   opacity: 1;
   transition-delay: 0.3s;
+  font-size: 18px;
+  border: 3px solid #fff;
+  width: 50px;
+  height: 30px;
+  line-height: 35px;
 }
-.box1 a{background-color: lightblue;}
-.box2 a{background-color: lightcoral;}
-.box3 a{background-color: lightgreen;}
-.box4 a{background-color: lightpink;}
-.box5 a{background-color: lightseagreen;}
+.boxs a:hover{
+  transition: 0.2s;
+  border-color: tomato;
+  color: tomato;
+}
 
 .box1{
   background:url(../image/lush-about/about-1.png)no-repeat center / cover ;
   flex: 1;
   transition: 0.5s;
-  background-color: rgba(0, 0, 0, 0.3);
-  background-blend-mode: multiply;
 }
 .box2{
   background:url(../image/lush-about/about-2.png)no-repeat center / cover;
   flex: 1;
   transition: 0.5s;
-  background-color: rgba(0, 0, 0, 0.3);
-  background-blend-mode: multiply;
 }
 .box3{
   background:url(../image/lush-about/about-3.png)no-repeat center / cover;
   flex: 1;
   transition: 0.5s;
-  background-color: rgba(0, 0, 0, 0.3);
-  background-blend-mode: multiply;
 }
 .box4{
   background:url(../image/lush-about/about-4.png)no-repeat center / cover;
   flex: 1;
   transition: 0.5s; 
-  background-color: rgba(0, 0, 0, 0.3);
-  background-blend-mode: multiply;
 }
 .box5{
   background:url(../image/lush-about/about-5.png)no-repeat center / cover;
   flex: 1;
   transition: 0.5s;
-  background-color: rgba(0, 0, 0, 0.3);
-  background-blend-mode: multiply;
 }
 .box1:hover{
   flex: 2;
-  background-blend-mode: normal;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
 }
 .box2:hover{
   flex: 2;
-  background-blend-mode: normal;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
 }
 .box3:hover{
   flex: 2;
-  background-blend-mode: normal;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
 }
 .box4:hover{
   flex: 2;
-  background-blend-mode: normal;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
 }
 .box5:hover{
   flex: 2;
-  background-blend-mode: normal;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
 }
 .box1:hover .box-text{opacity: 1;}
 .box2:hover .box-text{opacity: 1;}
@@ -253,10 +247,10 @@ a{
   position: relative;
   top: 50%;
   font-size: 30px;
-  color: #000;
-  text-shadow: 0 0 10px #fff;
+  color: #fff;
   transition: 0.7s;
   transition-delay: 0.5s;
+  text-shadow: 0px 0px 2px #000;
 }
 
 
@@ -265,135 +259,74 @@ a{
 
 /* item----------------- */
 #item{
-  margin-top: 100px;
+  margin:150px 0 50px 0;
   font-size: 70px;
   text-align: center;
 }
-
-@keyframes bath{
-  to{transform: translate(0,0);}
-  50%{transform: translateY(-10px);}
-  from{transform: translateY(0);}
-}
-@keyframes make-up{
-   to{transform: translate(0,0);}
-  50%{transform: translateY(-10px);}
-  from{transform: translateY(0);}
-}
-@keyframes body{
-  to{transform: translate(0,0);}
-  50%{transform: translateY(-10px);}
-  from{transform: translateY(0);}
-}
-@keyframes hair{
-   to{transform: translate(0,0);}
-  50%{transform: translateY(-10px);}
-  from{transform: translateY(0);}
-}
-@keyframes face{
-  to{transform: translate(0,0);}
-  50%{transform: translateY(-10px);}
-  from{transform: translateY(0);}
-}
-@keyframes perfume{
-  to{transform: translate(0,0);}
-  50%{transform: translateY(-10px);}
-  from{transform: translateY(0);}
-}
-
 .container2{
-/* border: 1px solid #000; */
-display: flex;
-justify-content: center;
-width: 1200px;
-height: 700px;
-margin: auto ;
+  width: 100%;
+  height: 700px;
+  /* border: 1px solid #000; */
 }
 .items{
-  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
+  place-items: center;
+  width: 1200px;
+  height: 700px;
+  margin: auto ;
 }
 .item{
   width: 300px;
   height: 300px;
-  margin: 10px 50px;
   position: relative;
-  float: left;
   text-align: center;
-  border-radius: 50%;
   cursor: pointer;
+  border-radius: 50%;
+  overflow: hidden;
 }
-.items .item:nth-child(1){animation: bath 1.5s infinite linear ;}
-.items .item:nth-child(2){animation: make-up 1.5s infinite linear;}
-.items .item:nth-child(3){animation: body 1.5s infinite linear;}
-.items .item:nth-child(4){animation: hair 1.5s infinite linear;}
-.items .item:nth-child(5){animation: face 1.5s infinite linear;}
-.items .item:nth-child(6){animation: perfume 1.5s infinite linear;}
-
 .item img{
   width: 300px;
   height: 300px;
-  border-radius: 50%;
-
 }
-.item li {
-  position: relative;
-  top:-170px;
+.item ul li {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   font-weight: bold;
-  font-size: 50px;
+  font-size: 35px;
   transition: 0.3s;
+  color: #fff;
 }
 .mini1{
   position: absolute;
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
-  width: 110px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   font-size: 18px;
   opacity: 0;
   transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.item p{padding: 3px 0;}
+.item p{
+  padding: 3px 0;
+  color: #fff;
+  opacity:0.3}
 .item:hover .mini1{opacity: 1;}
 .item:hover li{opacity: 0;}
-.item:hover img{filter: blur(2px);}
-.item:hover p{transform: scale(1.3);}
-.mini1:hover p{opacity:0.3 ;}
+.item:hover img{filter: brightness(30%);}
 .mini1 p:hover{
   opacity: 1;
-  text-shadow: 0 0 2px #fff;
-  color: darkblue;
+  color: #fff;
 }
-.item-name1{
-  color:dodgerblue;
-  text-shadow: 0 0 3px #000;
-}
-.item-name2{
-  color: rgb(24, 172, 121);
-  text-shadow: 0 0 3px #000;
-}
-.item-name3{
-  color: rgb(135, 141, 255);
-  text-shadow: 0 0 3px #000;
-}
-.item-name4{
-  color: rgb(244, 220, 161);
-  text-shadow: 0 0 3px #000;
-}
-.item-name5{
-  color: rgb(255, 166, 166);
-  text-shadow: 0 0 3px #000;
-}
-.item-name6{
-  color: rgb(255, 83, 244);
-  text-shadow: 0 0 3px #000;
-}
-.items .item:nth-child(1):hover{animation: normal;}
-.items .item:nth-child(2):hover{animation: normal;}
-.items .item:nth-child(3):hover{animation: normal;}
-.items .item:nth-child(4):hover{animation: normal;}
-.items .item:nth-child(5):hover{animation: normal;}
-.items .item:nth-child(6):hover{animation: normal;}
+
 
 
 
@@ -402,117 +335,59 @@ margin: auto ;
 #review{
   text-align: center;
   font-size: 70px;
-  margin-top: 100px ;
-  margin-bottom: 20px;
+  margin: 150px 0 50px 0;
 }
 .container3{
-  
-  /* border: 1px solid #000; */
-  width: 1200px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
   margin: auto;
 }
 .cards{
-  height: 500px;
+  width: 1200px;
+  height: 600px;
   display: flex;
+  margin: auto;
+}
+.cards ul{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.cards ul li{flex: 1;}
+.cards ul li:nth-of-type(1){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards ul li:nth-child(1) div{
+  width: 90%;
+  height: 90%;
+  border-radius: 20px;
   overflow: hidden;
 }
-  .card1{
-    cursor: pointer;
-    background: url(../image/review/man-gd3a788461_1920.jpg) no-repeat center / cover;
+.cards ul li div img{
+  width: 100%;
+  height: 100%;
 }
-.card2{
-  cursor: pointer;
-  background: url(../image/review/woman-g5247a2db3_1920.png) no-repeat center / cover;
+.cards ul li:nth-child(2) div{
+  margin: auto;
+  /* border: 1px solid #000; */
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
 }
-.card3{
-  cursor: pointer;
-  background: url(../image/review/night-photograph-gdac13a35a_1920.jpg) no-repeat center / cover;
-}
-.card4{
-  cursor: pointer;
-  background: url(../image/review/dog-g011d889aa_1920.jpg) no-repeat center / cover;
-}
-.cards p{
-  font-size: 50px;
-  color: #fff;
-  text-align: center;
-  margin-top: 40px;
-}
-.card1 p:hover{color: #666633;}
-.card2 p:hover{color: #FF9933;}
-.card3 p:hover{color: #CC66FF;}
-.card4 p:hover{color: #33CCCC;}
-
-.review span{
-  display: block;
-  position: relative;
-  top: 50px;
-  text-align: center;
-  font-size: 18px;
-  transition: 0.5s;
-}
-.review span:hover{
-  color: #fff;
-}
-.review{
-  width: 300px;
-  height: 500px;
-  /* background-color: red; */
-  margin-top:100px ;
-  transform: translateY(320px);
-  transition: 0.3s;
-  position: relative;
+.cards ul li:nth-child(2) div p{
+  flex: 1;
 }
 
-.card1:hover .review:nth-of-type(1){
-  transform: translate(0);
-  background: linear-gradient(to top, #fff
-  , transparent);
-}
-.card2:hover .review{
-  transform: translate(0);
-  background: linear-gradient(to top, orange
-  , transparent);
-
-}
-.card3:hover .review{
-  transform: translate(0);
-  background: linear-gradient(to top, skyblue
-  , transparent);
-}
-.card4:hover .review{
-  transform: translate(0);
-  background: linear-gradient(to top, lightgreen
-  , transparent);
-}
-.cards a{
-  position: absolute;
-  width: 100px;
-  height: 30px;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  background-color: #000;
-  border-radius: 30px;
-  text-align: center;
-  line-height: 35px;
-}
-.cards a:hover{
-  background-color: red;
-}
+.cards ul{cursor: pointer;}
 
 
-
-
-/* store---------------- */
+/* store--------------- */
 #store{
   font-size: 70px;
-  margin-top: 100px;
-  margin-bottom: 20px;
+  margin: 0px 0 50px 0;
   text-align: center;
 }
 .search{
@@ -525,7 +400,7 @@ margin: auto ;
   padding: 5px 20px;
   outline: none;
   border: none;
-  box-shadow:0 0 3px dodgerblue ;
+  box-shadow: 0px 0px 1px #000;
   text-align: center;
 }
 .search span::before{
@@ -545,16 +420,13 @@ margin: auto ;
 
 
 .tab-inner{
-  /* border: 1px solid #000; */
   position: relative;
   width: 1200px;
   height: 500px;
   overflow: hidden;
-  box-shadow: 0 0 10px dodgerblue;
 }
 input[name=tabmenu]{display: none;}
 .ac{
-  
   position: absolute;
   top: 0;
   left: -50px;
@@ -569,11 +441,12 @@ input[name=tabmenu]{display: none;}
 }
 .btn label{
   background-color: #ffffff93;
-  width: 25px;
-  height: 5px;
+  width: 15px;
+  height: 15px;
   display: inline-block;
   cursor: pointer;
   transition: 0.3s;
+  border-radius: 50px;
 }
 input[id=tab1]:checked ~ .slide1,
 input[id=tab2]:checked ~ .slide2,
@@ -588,7 +461,7 @@ input[id=tab2]:checked ~ .btn label[for=tab2],
 input[id=tab3]:checked ~ .btn label[for=tab3],
 input[id=tab4]:checked ~ .btn label[for=tab4],
 input[id=tab5]:checked ~ .btn label[for=tab5]{
-  background-color:red;
+  background-color:tomato;
   border-radius: 50px;
 }
 .name1, .name2, .name3, .name4, .name5{
@@ -607,13 +480,7 @@ input[id=tab5]:checked ~ .btn label[for=tab5]{
   opacity:0;
   transform: translateY(-50px);
   transition: 0.5s;
-  text-shadow: 1px 1px 3px black;
 }
-.name1{color: teal;}
-.name2{color: tomato;}
-.name3{color: red;}
-.name4{color: dodgerblue;}
-.name5{color: orange;}
 .name1 span,
 .name2 span,
 .name3 span,
@@ -654,13 +521,12 @@ input[id=tab5]:checked ~ .store-name .name5{
 .sns{ 
   display: flex;
   justify-content: center;
-  /* border: 1px solid red; */
   font-size: 40px;
   color: red;
   margin:10px 15px;
 }
 .sns a{padding: 10px;}
-address{
+.address{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -669,3 +535,6 @@ address{
   font-size: 20px;
   color:#888 ;
 }
+
+
+
